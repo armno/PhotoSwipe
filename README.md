@@ -145,9 +145,13 @@ Options
   	<td>iOS only - Allow the user to rotate images whilst zooming / panning.</td>
   	<td>`false`</td>
   </tr>
+  <tr>
+  	<td><code>backButtonHideEnabled</code></td>
+  	<td><code>true</code></td>
+  	<td>This will hide the gallery when the user hits the back button. Useful for Android  and Blackberry. Works in BB6, Android v2.1 and above and iOS 4 and above.</td>
+  </tr>
 </table>
 
-- `backButtonHideEnabled`: This will hide the gallery when the user hits the back button. Useful for Android  and Blackberry. Works in BB6, Android v2.1 and above and iOS 4 and above. Default = `true`
 - `captionAndToolbarAutoHideDelay`: How long to wait before the caption and toolbar automatically disappear. Default = `5000`. Set to `0` to prevent auto disappearing
 - `captionAndToolbarFlipPosition`: Place the caption at the bottom and the toolbar at the top. Default = `false`
 - `captionAndToolbarHide`: Hide the caption and toolbar. Default = `false`
