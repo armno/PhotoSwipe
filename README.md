@@ -125,206 +125,211 @@ Options
 -------
 
 <table>
-  <tr>
-    <th>Name</th>
-    <th>Default</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-  	<td><code>allowUserZoom</code></td>
-  	<td><code>true</code></td>
-  	<td>Allow the user to zoom / pan around images.</td>
-  </tr>
-  <tr>
-  	<td><code>autoStartSlideshow</code></td>
-  	<td><code>false</code></td>
-  	<td>Automatically starts the slideshow mode when PhotoSwipe is activated.</td>
-  </tr>
-  <tr>
-  	<td><code>allowRotationOnUserZoom</code></td>
-  	<td><code>false</code></td>
-  	<td>iOS only - Allow the user to rotate images whilst zooming / panning.</td>
-  </tr>
-  <tr>
-  	<td><code>backButtonHideEnabled</code></td>
-  	<td><code>true</code></td>
-  	<td>This will hide the gallery when the user hits the back button. Useful for Android  and Blackberry. Works in BB6, Android v2.1 and above and iOS 4 and above.</td>
-  </tr>
-  <tr>
-  	<td><code>captionAndToolbarAutoHideDelay</code></td>
-  	<td><code>5000</code></td>
-  	<td>How long to wait before the caption and toolbar automatically disappear. Default = 5000. Set to 0 to prevent auto disappearing</td>
-  </tr>
-  <tr>
-  	<td><code>captionAndToolbarFlipPosition</code></td>
-  	<td><code>false</code></td>
-  	<td>Place the caption at the bottom and the toolbar at the top.</td>
-  </tr>
-  <tr>
-  	<td><code>captionAndToolbarHide</code></td>
-  	<td><code>false</code></td>
-  	<td>Hide the caption and toolbar.</td>
-  </tr>
-  <tr>
-  	<td><code>captionAndToolbarOpacity</code></td>
-  	<td><code>0.8</code></td>
-  	<td>The opacity of the caption and toolbar.</td>
-  </tr>
-  <tr>
-  	<td><code>captionAndToolbarShowEmptyCaptions</code></td>
-  	<td><code>true</code></td>
-  	<td>Shows a blank caption area even if a caption cannot be found for the current image.</td>
-  </tr>
-  <tr>
-  	<td><code>cacheMode</code></td>
-  	<td><code>Code.PhotoSwipe.Cache.Mode.normal</code></td>
-  	<td><code>Code.PhotoSwipe.Cache.Mode.normal</code> (default) or <code>Code.PhotoSwipe.Cache.Mode.aggressive</code>. Changes how PhotoSwipe manages it's cache. Aggressive will purposely set images that are not either the current, next or previous to be an empty "spacer" type image. This helps on older iOS versions if you have excessively large images. In the main, normal should suffice</td>
-  </tr>
-  <tr>
-  	<td><code>doubleTapSpeed</code></td>
-  	<td><code>300</code></td>
-  	<td>Double tap speed in milliseconds.</td>
-  </tr>
-  <tr>
-  	<td><code>doubleTapZoomLevel</code></td>
-  	<td><code>2.5</code></td>
-  	<td>When the user double taps an image, the default "zoom-in" level.</td>
-  </tr>
-  <tr>
-  	<td><code>enableDrag</code></td>
-  	<td><code>true</code></td>
-  	<td>Enables dragging the next / previous image into view.</td>
-  </tr>
-  <tr>
-  	<td><code>enableKeyboard</code></td>
-  	<td><code>true</code></td>
-  	<td>Enables keyboard support.</td>
-  </tr>
-  <tr>
-  	<td><code>enableMouseWheel</code></td>
-  	<td><code>true</code></td>
-  	<td>Enables mouse wheel support.</td>
-  </tr>
-  <tr>
-  	<td><code>enableUIWebViewRepositionTimeout</code></td>
-  	<td><code>false</code></td>
-  	<td>If enabled, continually checks to see if the device orientation has changed. Required as a work around for issue #141.</td>
-  </tr>
-  <tr>
-  	<td><code>fadeInSpeed</code></td>
-  	<td><code>250</code></td>
-  	<td>The speed of any fading-in elements in milliseconds.</td>
-  </tr>
-  <tr>
-  	<td><code>fadeOutSpeed</code></td>
-  	<td><code>250</code></td>
-  	<td>The speed of any fading-out elements in milliseconds.</td>
-  </tr>
-  <tr>
-  	<td><code>imageScaleMethod</code></td>
-  	<td><code>fit</code></td>
-  	<td>How images will fit onto the screen. Either <code>fit</code>, <code>fitNoUpscale</code> or <code>zoom</code>. <code>fit</code> ensures the image always fits the screen. <code>fitNoUpscale</code> works like <code>fit</code> but will never upscale the image. <code>zoom</code> the image will always fill the full screen, this may cause the image to be "zoomed" in and cropped.</td>
-  </tr>
-  <tr>
-  	<td><code>invertMouseWheel</code></td>
-  	<td><code>false</code></td>
-  	<td>By default, moving the mouse wheel down will move to the next image, up to the previous. Setting this to true reverses this.</td>
-  </tr>
-  <tr>
-  	<td><code>jQueryMobile</code></td>
-  	<td></td>
-  	<td>Whether PhotoSwipe is integrated into a jQuery Mobile project or not. By default, PhotoSwipe will try and work this out for you.</td>
-  </tr>
-  <tr>
-  	<td><code>jQueryMobileDialogHash</code></td>
-  	<td><code>&ui-state=dialog</code></td>
-  	<td>The window hash tag used by jQuery Mobile and dialog pages.</td>
-  </tr>
-  <tr>
-  	<td><code>loop</code></td>
-  	<td><code>true</code></td>
-  	<td>Whether the gallery auto-loops back to the beginning when you reach the end.</td>
-  </tr>
-  <tr>
-  	<td><code>margin</code></td>
-  	<td><code>20</code></td>
-  	<td>The margin between each image in pixels.</td>
-  </tr>
-  <tr>
-  	<td><code>maxUserZoom</code></td>
-  	<td><code>5.0</code></td>
-  	<td>The maximum a user can zoom into an image. (set to zero for this to be ignored)</td>
-  </tr>
-  <tr>
-  	<td><code>minUserZoom</code></td>
-  	<td><code>0.5</code></td>
-  	<td>The minimum a user can zoom out of an image. (set to zero for this to be ignored)</td>
-  </tr>
-  <tr>
-  	<td><code>mouseWheelSpeed</code></td>
-  	<td><code>500</code></td>
-  	<td>How responsive the mouse wheel is.</td>
-  </tr>
-  <tr>
-  	<td><code>nextPreviousSlideSpeed</code></td>
-  	<td><code>0</code> (immediately)</td>
-  	<td>How fast images are displayed when the next/previous buttons are clicked in milliseconds.</td>
-  </tr>
-  <tr>
-  	<td><code>preventHide</code></td>
-  	<td><code>false</code></td>
-  	<td>Prevents the user closing PhotoSwipe. Also hides the "close" button from the toolbar. Useful for "exclusive mode" (see examples/08-exclusive-mode.html).</td>
-  </tr>
-  <tr>
-  	<td><code>preventSlideshow</code></td>
-  	<td><code>false</code></td>
-  	<td>Prevents the slideshow being activated. Also hides the "play" button from the toolbar.</td>
-  </tr>
-  <tr>
-  	<td><code>preventDefaultTouchEvents</code></td>
-  	<td><code>true</code></td>
-  	<td>Prevents device default touch events (i.e. stops the user scrolling the screen upwards etc).</td>
-  </tr>
-  <tr>
-  	<td><code>slideshowDelay</code></td>
-  	<td><code>3000</code></td>
-  	<td>The delay between showing the next image when in slideshow mode in milliseconds.</td>
-  </tr>
-  <tr>
-  	<td><code>slideSpeed</code></td>
-  	<td><code>250</code></td>
-  	<td>How fast images slide into view in milliseconds.</td>
-  </tr>
-  <tr>
-  	<td><code>swipeThreshold</code></td>
-  	<td><code>50</code></td>
-  	<td>How many pixels your finger has to move across the screen to register a swipe gesture.</td>
-  </tr>
-  <tr>
-  	<td><code>swipeTimeThreshold</code></td>
-  	<td><code>250</code></td>
-  	<td>A swipe must take no longer than this value in milliseconds to be registered as a swipe gesture.</td>
-  </tr>
-  <tr>
-  	<td><code>slideTimingFunction</code></td>
-  	<td><code>ease-out</code></td>
-  	<td>Easing function used when sliding.</td>
-  </tr>
-  <tr>
-  	<td><code>target</code></td>
-  	<td><code>window</code></td>
-  	<td>DOM Target for PhotoSwipe. By default "window" which will mean PhotoSwipe runs "fullscreen". Value must be a valid DOM element.</td>
-  </tr>
-  <tr>
-  	<td><code>uiWebViewResetPositionDelay</code></td>
-  	<td><code>500</code></td>
-  	<td>Related to <code>enableUIWebViewRepositionTimeout</code>.</td>
-  </tr>
-  <tr>
-  	<td><code>zIndex</code></td>
-  	<td><code>1000</code></td>
-  	<td>The intial zIndex for PhotoSwipe</td>
-  </tr>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>allowUserZoom</code></td>
+      <td><code>true</code></td>
+      <td>Allow the user to zoom / pan around images.</td>
+    </tr>
+    <tr>
+      <td><code>autoStartSlideshow</code></td>
+      <td><code>false</code></td>
+      <td>Automatically starts the slideshow mode when PhotoSwipe is activated.</td>
+    </tr>
+    <tr>
+      <td><code>allowRotationOnUserZoom</code></td>
+      <td><code>false</code></td>
+      <td>iOS only - Allow the user to rotate images whilst zooming / panning.</td>
+    </tr>
+    <tr>
+      <td><code>backButtonHideEnabled</code></td>
+      <td><code>true</code></td>
+      <td>This will hide the gallery when the user hits the back button. Useful for Android  and Blackberry. Works in BB6, Android v2.1 and above and iOS 4 and above.</td>
+    </tr>
+    <tr>
+      <td><code>captionAndToolbarAutoHideDelay</code></td>
+      <td><code>5000</code></td>
+      <td>How long to wait before the caption and toolbar automatically disappear. Default = 5000. Set to 0 to prevent auto disappearing</td>
+    </tr>
+    <tr>
+      <td><code>captionAndToolbarFlipPosition</code></td>
+      <td><code>false</code></td>
+      <td>Place the caption at the bottom and the toolbar at the top.</td>
+    </tr>
+    <tr>
+      <td><code>captionAndToolbarHide</code></td>
+      <td><code>false</code></td>
+      <td>Hide the caption and toolbar.</td>
+    </tr>
+    <tr>
+      <td><code>captionAndToolbarOpacity</code></td>
+      <td><code>0.8</code></td>
+      <td>The opacity of the caption and toolbar.</td>
+    </tr>
+    <tr>
+      <td><code>captionAndToolbarShowEmptyCaptions</code></td>
+      <td><code>true</code></td>
+      <td>Shows a blank caption area even if a caption cannot be found for the current image.</td>
+    </tr>
+    <tr>
+      <td><code>cacheMode</code></td>
+      <td><code>Code.PhotoSwipe.Cache.Mode.normal</code></td>
+      <td><code>Code.PhotoSwipe.Cache.Mode.normal</code> (default) or <code>Code.PhotoSwipe.Cache.Mode.aggressive</code>. Changes how PhotoSwipe manages it's cache. Aggressive will purposely set images that are not either the current, next or previous to be an empty "spacer" type image. This helps on older iOS versions if you have excessively large images. In the main, normal should suffice</td>
+    </tr>
+    <tr>
+      <td><code>doubleTapSpeed</code></td>
+      <td><code>300</code></td>
+      <td>Double tap speed in milliseconds.</td>
+    </tr>
+    <tr>
+      <td><code>doubleTapZoomLevel</code></td>
+      <td><code>2.5</code></td>
+      <td>When the user double taps an image, the default "zoom-in" level.</td>
+    </tr>
+    <tr>
+      <td><code>enableDrag</code></td>
+      <td><code>true</code></td>
+      <td>Enables dragging the next / previous image into view.</td>
+    </tr>
+    <tr>
+      <td><code>enableKeyboard</code></td>
+      <td><code>true</code></td>
+      <td>Enables keyboard support.</td>
+    </tr>
+    <tr>
+      <td><code>enableMouseWheel</code></td>
+      <td><code>true</code></td>
+      <td>Enables mouse wheel support.</td>
+    </tr>
+    <tr>
+      <td><code>enableUIWebViewRepositionTimeout</code></td>
+      <td><code>false</code></td>
+      <td>If enabled, continually checks to see if the device orientation has changed. Required as a work around for issue #141.</td>
+    </tr>
+    <tr>
+      <td><code>fadeInSpeed</code></td>
+      <td><code>250</code></td>
+      <td>The speed of any fading-in elements in milliseconds.</td>
+    </tr>
+    <tr>
+      <td><code>fadeOutSpeed</code></td>
+      <td><code>250</code></td>
+      <td>The speed of any fading-out elements in milliseconds.</td>
+    </tr>
+    <tr>
+      <td><code>imageScaleMethod</code></td>
+      <td><code>fit</code></td>
+      <td>How images will fit onto the screen. Either <code>fit</code>, <code>fitNoUpscale</code> or <code>zoom</code>. <code>fit</code> ensures the image always fits the screen. <code>fitNoUpscale</code> works like <code>fit</code> but will never upscale the image. <code>zoom</code> the image will always fill the full screen, this may cause the image to be "zoomed" in and cropped.</td>
+    </tr>
+    <tr>
+      <td><code>invertMouseWheel</code></td>
+      <td><code>false</code></td>
+      <td>By default, moving the mouse wheel down will move to the next image, up to the previous. Setting this to true reverses this.</td>
+    </tr>
+    <tr>
+      <td><code>jQueryMobile</code></td>
+      <td></td>
+      <td>Whether PhotoSwipe is integrated into a jQuery Mobile project or not. By default, PhotoSwipe will try and work this out for you.</td>
+    </tr>
+    <tr>
+      <td><code>jQueryMobileDialogHash</code></td>
+      <td><code>&ui-state=dialog</code></td>
+      <td>The window hash tag used by jQuery Mobile and dialog pages.</td>
+    </tr>
+    <tr>
+      <td><code>loop</code></td>
+      <td><code>true</code></td>
+      <td>Whether the gallery auto-loops back to the beginning when you reach the end.</td>
+    </tr>
+    <tr>
+      <td><code>margin</code></td>
+      <td><code>20</code></td>
+      <td>The margin between each image in pixels.</td>
+    </tr>
+    <tr>
+      <td><code>maxUserZoom</code></td>
+      <td><code>5.0</code></td>
+      <td>The maximum a user can zoom into an image. (set to zero for this to be ignored)</td>
+    </tr>
+    <tr>
+      <td><code>minUserZoom</code></td>
+      <td><code>0.5</code></td>
+      <td>The minimum a user can zoom out of an image. (set to zero for this to be ignored)</td>
+    </tr>
+    <tr>
+      <td><code>mouseWheelSpeed</code></td>
+      <td><code>500</code></td>
+      <td>How responsive the mouse wheel is.</td>
+    </tr>
+    <tr>
+      <td><code>nextPreviousSlideSpeed</code></td>
+      <td><code>0</code> (immediately)</td>
+      <td>How fast images are displayed when the next/previous buttons are clicked in milliseconds.</td>
+    </tr>
+    <tr>
+      <td><code>preventHide</code></td>
+      <td><code>false</code></td>
+      <td>Prevents the user closing PhotoSwipe. Also hides the "close" button from the toolbar. Useful for "exclusive mode" (see examples/08-exclusive-mode.html).</td>
+    </tr>
+    <tr>
+      <td><code>preventSlideshow</code></td>
+      <td><code>false</code></td>
+      <td>Prevents the slideshow being activated. Also hides the "play" button from the toolbar.</td>
+    </tr>
+    <tr>
+      <td><code>preventDefaultTouchEvents</code></td>
+      <td><code>true</code></td>
+      <td>Prevents device default touch events (i.e. stops the user scrolling the screen upwards etc).</td>
+    </tr>
+    <tr>
+      <td><code>slideshowDelay</code></td>
+      <td><code>3000</code></td>
+      <td>The delay between showing the next image when in slideshow mode in milliseconds.</td>
+    </tr>
+    <tr>
+      <td><code>slideSpeed</code></td>
+      <td><code>250</code></td>
+      <td>How fast images slide into view in milliseconds.</td>
+    </tr>
+    <tr>
+      <td><code>swipeThreshold</code></td>
+      <td><code>50</code></td>
+      <td>How many pixels your finger has to move across the screen to register a swipe gesture.</td>
+    </tr>
+    <tr>
+      <td><code>swipeTimeThreshold</code></td>
+      <td><code>250</code></td>
+      <td>A swipe must take no longer than this value in milliseconds to be registered as a swipe gesture.</td>
+    </tr>
+    <tr>
+      <td><code>slideTimingFunction</code></td>
+      <td><code>ease-out</code></td>
+      <td>Easing function used when sliding.</td>
+    </tr>
+    <tr>
+      <td><code>target</code></td>
+      <td><code>window</code></td>
+      <td>DOM Target for PhotoSwipe. By default "window" which will mean PhotoSwipe runs "fullscreen". Value must be a valid DOM element.</td>
+    </tr>
+    <tr>
+      <td><code>uiWebViewResetPositionDelay</code></td>
+      <td><code>500</code></td>
+      <td>Related to <code>enableUIWebViewRepositionTimeout</code>.</td>
+    </tr>
+    <tr>
+      <td><code>zIndex</code></td>
+      <td><code>1000</code></td>
+      <td>The intial zIndex for PhotoSwipe</td>
+    </tr>
+  </tbody>
+
 </table>
 
 Options - Custom Functions
@@ -341,9 +346,9 @@ document.addEventListener('DOMContentLoaded', function(){
     window.document.querySelectorAll('#Gallery a'),
     {
       getImageSource: function(el){
-	    return el.getAttribute('rel');
+      return el.getAttribute('rel');
       }
-	}
+  }
   );
 }, false);
 ```
@@ -353,9 +358,9 @@ document.addEventListener('DOMContentLoaded', function(){
 
 ```js
 getImageMetaData: function(el){
-	return {
-		longDescription: el.getAttribute(el, 'data-long-description')
-	}
+  return {
+    longDescription: el.getAttribute(el, 'data-long-description')
+  }
 }
 ```
 
